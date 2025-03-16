@@ -1,5 +1,31 @@
 
 :root {
+    /* My Palette */
+    /* Titlebar */
+    --inf-grey1: #16171e;
+    /* Side-est-bar */
+    --inf-grey2: #1a1c23;
+    /* Sidebar */
+    --inf-grey3: #23252e;
+    /* Body */
+    --inf-grey4: #272a34;
+    /* Buttons */
+    --inf-grey5: #323643;
+
+    /* Primary Blue */
+    --inf-blue1: #2777ff;
+    /* Secondary Blue */
+    --inf-blue2: #005af3;
+
+    /* Text */
+    --inf-white3: #eeeeec;
+    /* Sidebar Icons */
+    --inf-white2: #bbbbbd;
+    /* Inactive (Used with sidebar) */
+    --inf-white1: #888a8d;
+
+    /* ------------------------------ */
+
     --stg-icon: url("/icons/icon.svg");
 
     --indent: 10px;
@@ -8,16 +34,16 @@
     --fill-color: #5d5d5d;
 
     --background-color: #ffffff;
-    --text-color: inherit;
-    --discarded-text-color: gray;
+    --text-color: var(--inf-white3);
+    --discarded-text-color: var(--inf-white1);
 
     --input-background-color: var(--background-color);
     --input-text-color: var(--text-color);
 
-    --color-light-gray: #eceded;
-    --color-gray: #e3e3e3;
-    --color-dark-gray: #d4d4d4;
-    --color-dark-dark-gray: #bababa;
+    --color-light-gray: var(--inf-white3);
+    --color-gray: var(--inf-white2);
+    --color-dark-gray: var(--inf-white1);
+    --color-dark-dark-gray: var(--inf-grey5);
 
     --outline-color: rgba(0, 0, 0, 0.5);
 
@@ -27,14 +53,14 @@
 }
 
 html[data-theme=dark] {
-    --color-hr: #5c5c61;
+    --color-hr: var(--inf-grey4);
 
-    --fill-color: #bebebe;
+    --fill-color: var(--inf-white2);
 
-    --background-color: #323234;
-    --text-color: silver;
+    --background-color: var(--inf-grey3);
+    --text-color: var(--inf-white3);
 
-    --input-background-color: #404040;
+    --input-background-color: var(--inf-grey5);
     --input-text-color: var(--text-color);
 
     --outline-color: var(--text-color);
@@ -43,7 +69,7 @@ html[data-theme=dark] {
 }
 
 html[data-theme=dark] a:hover {
-    color: #22519c;
+    color: var(--inf-blue2);
 }
 
 html[data-theme=dark] .checkbox:not([disabled]):hover,
@@ -67,8 +93,8 @@ html[data-theme=dark] .select select {
 }
 
 html[data-theme=dark] .select select {
-    color: #f7f9fa;
-    border-color: #4c4c4e;
+    color: var(--inf-white3);
+    border-color: var(--inf-grey3);
 }
 
 html[data-theme=dark] .button {
@@ -78,16 +104,16 @@ html[data-theme=dark] .button {
 html[data-theme=dark] .input:focus,
 html[data-theme=dark] .textarea:focus,
 html[data-theme=dark] .button:focus {
-    border-color: #0078d7;
+    border-color: var(--inf-blue1);
 }
 
 html[data-theme=dark] .button.is-focused:not(:active) {
-    box-shadow: 0 0 0 .125em rgba(34, 109, 230, 0.74);
+    box-shadow: 0 0 0 .125em var(--inf-blue1);
 }
 
 html[data-theme=dark] code {
-    background-color: #404040;
-    color: #b1b1b1;
+    background-color: var(--inf-grey3);
+    color: var(--inf-white2);
 }
 
 html[data-theme=dark] .select:not(.is-multiple):not(.is-loading)::after {
@@ -95,7 +121,7 @@ html[data-theme=dark] .select:not(.is-multiple):not(.is-loading)::after {
 }
 
 html[data-theme=dark] .select:not(.is-multiple):not(.is-loading):hover::after {
-    border-color: #3273dc;
+    border-color: var(--inf-blue1);
 }
 
 /* global-classes */

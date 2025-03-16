@@ -1431,6 +1431,30 @@
 
 <style>
     :root {
+        /* My Palette */
+        /* Titlebar */
+        --inf-grey1: #16171e;
+        /* Side-est-bar */
+        --inf-grey2: #1a1c23;
+        /* Sidebar */
+        --inf-grey3: #23252e;
+        /* Body */
+        --inf-grey4: #272a34;
+        /* Buttons */
+        --inf-grey5: #323643;
+
+        /* Primary Blue */
+        --inf-blue1: #2777ff;
+        /* Secondary Blue */
+        --inf-blue2: #005af3;
+
+        /* Text */
+        --inf-white3: #eeeeec;
+        /* Sidebar Icons */
+        --inf-white2: #bbbbbd;
+        /* Inactive (Used with sidebar) */
+        --inf-white1: #888a8d;
+
         --margin: 5px;
         --is-in-multiple-drop-text-color: #ffffff;
         --border-radius: 3px;
@@ -1455,13 +1479,13 @@
     }
 
     html[data-theme="dark"] {
-        --text-color: #e0e0e0;
+        --text-color: var(--inf-white3);
 
-        --group-bg-color: #444444;
-        --group-active-shadow-color: rgba(255, 255, 255, 0.3);
-        --group-active-border-color: #e0e0e0;
+        --group-bg-color: var(--inf-grey3);
+        --group-active-shadow-color: var(--inf-grey1);
+        --group-active-border-color: var(--inf-white2);
 
-        --discarded-text-color: #979797;
+        --discarded-text-color: var(--inf-white1);
     }
 
     .fade-enter-active, .fade-leave-active {
@@ -1499,7 +1523,7 @@
         position: absolute;
         top: calc(100vh / 2 - 25px);
         left: calc(100vw / 2 - 25px);
-        fill: #6e6e6e;
+        fill: var(--inf-grey4);
     }
 
     #multipleTabsText {

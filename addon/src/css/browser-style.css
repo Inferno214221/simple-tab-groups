@@ -1,4 +1,28 @@
 :root {
+    /* My Palette */
+    /* Titlebar */
+    --inf-grey1: #16171e;
+    /* Side-est-bar */
+    --inf-grey2: #1a1c23;
+    /* Sidebar */
+    --inf-grey3: #23252e;
+    /* Body */
+    --inf-grey4: #272a34;
+    /* Buttons */
+    --inf-grey5: #323643;
+
+    /* Primary Blue */
+    --inf-blue1: #2777ff;
+    /* Secondary Blue */
+    --inf-blue2: #005af3;
+
+    /* Text */
+    --inf-white3: #eeeeec;
+    /* Sidebar Icons */
+    --inf-white2: #bbbbbd;
+    /* Inactive (Used with sidebar) */
+    --inf-white1: #888a8d;
+
     --in-content-box-border-color: #d7d7db;
     --in-content-box-background: #fff;
 }
@@ -24,7 +48,7 @@ input[type="checkbox"]:not(:disabled):hover {
 input[type="checkbox"]:checked {
     background-image: url('/icons/check.svg');
     -moz-context-properties: fill;
-    fill: #2292d0;
+    fill: var(--inf-blue1);
 }
 
 input[type="checkbox"]:disabled {
@@ -45,10 +69,10 @@ input[type="checkbox"] {
 
 /* DARK theme */
 html[data-theme="dark"] {
-    --in-content-box-border-color: #0a84ff;
-    --in-content-box-background: #3f3f43;
+    --in-content-box-border-color: var(--inf-blue2);
+    --in-content-box-background: var(--inf-grey3);
 }
 
 html[data-theme="dark"] input[type="checkbox"] {
-    --in-content-box-border-color: #4c4c4e;
+    --in-content-box-border-color: var(--inf-grey4);
 }

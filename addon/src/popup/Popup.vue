@@ -1868,6 +1868,30 @@
 
 <style>
     :root {
+        /* My Palette */
+        /* Titlebar */
+        --inf-grey1: #16171e;
+        /* Side-est-bar */
+        --inf-grey2: #1a1c23;
+        /* Sidebar */
+        --inf-grey3: #23252e;
+        /* Body */
+        --inf-grey4: #272a34;
+        /* Buttons */
+        --inf-grey5: #323643;
+
+        /* Primary Blue */
+        --inf-blue1: #2777ff;
+        /* Secondary Blue */
+        --inf-blue2: #005af3;
+
+        /* Text */
+        --inf-white3: #eeeeec;
+        /* Sidebar Icons */
+        --inf-white2: #bbbbbd;
+        /* Inactive (Used with sidebar) */
+        --inf-white1: #888a8d;
+    
         --popup-width: 450px;
         --max-popup-width: 100%;
 
@@ -1922,12 +1946,12 @@
     }
 
     html[data-theme="dark"] {
-        --item-background-color-active: #686869;
-        --item-background-color-hover: var(--input-background-color);
-        --item-background-color-active-hover: #4b4b4b;
+        --item-background-color-active: var(--inf-grey4);
+        --item-background-color-hover: var(--inf-grey4);
+        --item-background-color-active-hover: var(--inf-grey5);
 
-        --footer-background-color: var(--item-background-color-active-hover);
-        --footer-background-hover-color: var(--item-background-color-hover);
+        --footer-background-color: var(--inf-grey4);
+        --footer-background-hover-color: var(--inf-grey5);
     }
 
     #stg-popup {
